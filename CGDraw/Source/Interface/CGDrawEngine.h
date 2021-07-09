@@ -18,7 +18,7 @@ extern "C" {
 //C symbol declarations
 #include "CGDrawBridge.h" //这个是引入定义的结构体
 long registerEngine();
-void setInputData(long handle, char *)data;
+void setInputData(long handle, char *data);
 void register_callback(long handle, CallbackCpp *callback);
 void getRenderTexture(long handle);
 //C symbol declarations

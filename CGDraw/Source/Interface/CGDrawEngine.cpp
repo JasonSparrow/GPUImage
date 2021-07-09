@@ -6,12 +6,13 @@
 //
 
 #include <stdio.h>
+#include "CGDrawEngine.h"
 
 long registerEngine() {
     return 0;
 }
 
-void setInputData(char *)data {
+void setInputData(char *data) {
     
 }
 
