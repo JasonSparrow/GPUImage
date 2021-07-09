@@ -33,8 +33,6 @@
 		E550F2F226731C6F001D825B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E550F2F126731C6F001D825B /* main.m */; };
 		E550F30726731E5D001D825B /* CGDrawOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E550F30526731E5D001D825B /* CGDrawOutput.cpp */; };
 		E550F30D26731F02001D825B /* CGDrawAgent.mm in Sources */ = {isa = PBXBuildFile; fileRef = E550F30C26731F02001D825B /* CGDrawAgent.mm */; };
-		E550F31026731FFD001D825B /* CGDrawDataInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E550F30E26731FFD001D825B /* CGDrawDataInput.cpp */; };
-		E550F3132673200D001D825B /* CGDrawTextureInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E550F3112673200D001D825B /* CGDrawTextureInput.cpp */; };
 		E550F31926732027001D825B /* CGDrawTextureOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E550F31726732027001D825B /* CGDrawTextureOutput.cpp */; };
 		E550F31E26732074001D825B /* CGDrawFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E550F31C26732074001D825B /* CGDrawFilter.cpp */; };
 		E550F32126732085001D825B /* CGDrawFramebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E550F31F26732085001D825B /* CGDrawFramebuffer.cpp */; };
@@ -97,9 +95,7 @@
 		E550F30626731E5D001D825B /* CGDrawOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawOutput.h; sourceTree = "<group>"; };
 		E550F30B26731F02001D825B /* CGDrawAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawAgent.h; sourceTree = "<group>"; };
 		E550F30C26731F02001D825B /* CGDrawAgent.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CGDrawAgent.mm; sourceTree = "<group>"; };
-		E550F30E26731FFD001D825B /* CGDrawDataInput.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawDataInput.cpp; sourceTree = "<group>"; };
 		E550F30F26731FFD001D825B /* CGDrawDataInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawDataInput.h; sourceTree = "<group>"; };
-		E550F3112673200D001D825B /* CGDrawTextureInput.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawTextureInput.cpp; sourceTree = "<group>"; };
 		E550F3122673200D001D825B /* CGDrawTextureInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureInput.h; sourceTree = "<group>"; };
 		E550F31726732027001D825B /* CGDrawTextureOutput.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawTextureOutput.cpp; sourceTree = "<group>"; };
 		E550F31826732027001D825B /* CGDrawTextureOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureOutput.h; sourceTree = "<group>"; };
@@ -289,9 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				E550F30326731E54001D825B /* CGDrawInput.h */,
-				E550F30E26731FFD001D825B /* CGDrawDataInput.cpp */,
 				E550F30F26731FFD001D825B /* CGDrawDataInput.h */,
-				E550F3112673200D001D825B /* CGDrawTextureInput.cpp */,
 				E550F3122673200D001D825B /* CGDrawTextureInput.h */,
 			);
 			path = Input;
@@ -394,7 +388,6 @@
 			files = (
 				964AFC1D268CC58800CBB497 /* CGPaintViewOutput.m in Sources */,
 				964AFC18268CC58800CBB497 /* CGPaintRawDataInput.m in Sources */,
-				E550F3132673200D001D825B /* CGDrawTextureInput.cpp in Sources */,
 				E550F32426732096001D825B /* CGDrawFramebufferCache.cpp in Sources */,
 				E550F31E26732074001D825B /* CGDrawFilter.cpp in Sources */,
 				96493E5726837E7500721661 /* CGVec.cpp in Sources */,
@@ -417,7 +410,6 @@
 				E550F32126732085001D825B /* CGDrawFramebuffer.cpp in Sources */,
 				964AFC12268CC58800CBB497 /* CGPaintFramebufferCache.m in Sources */,
 				964AFC0F268CC58800CBB497 /* CGPaintRenderPipeline.m in Sources */,
-				E550F31026731FFD001D825B /* CGDrawDataInput.cpp in Sources */,
 				E550F2F226731C6F001D825B /* main.m in Sources */,
 				964AFC20268CC58800CBB497 /* CGPaintUtils.m in Sources */,
 				964AFC0E268CC58700CBB497 /* CGPaintPipelineOutput.m in Sources */,
