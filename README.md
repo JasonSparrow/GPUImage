@@ -1,4 +1,3 @@
 # CGDraw
-基于OpenGL ES的图像和视频处理的跨平台C++框架
+GPU accelerated processor for iOS based on OpenGL use C++
 
-功能待完善, coding...
