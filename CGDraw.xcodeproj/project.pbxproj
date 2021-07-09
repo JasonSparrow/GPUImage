@@ -12,15 +12,15 @@
 		96493E5A2683936300721661 /* CGDrawTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96493E582683936300721661 /* CGDrawTexture.cpp */; };
 		964AFC0E268CC58700CBB497 /* CGPaintPipelineOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AFBC8268CC58700CBB497 /* CGPaintPipelineOutput.m */; };
 		964AFC0F268CC58800CBB497 /* CGPaintRenderPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AFBC9268CC58700CBB497 /* CGPaintRenderPipeline.m */; };
-		964AFC10268CC58800CBB497 /* CGPaintFramebuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AFBCC268CC58700CBB497 /* CGPaintFramebuffer.m */; };
 		964AFC11268CC58800CBB497 /* CGPaintProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AFBD0268CC58700CBB497 /* CGPaintProgram.m */; };
-		964AFC12268CC58800CBB497 /* CGPaintFramebufferCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AFBD3268CC58700CBB497 /* CGPaintFramebufferCache.m */; };
 		964AFC13268CC58800CBB497 /* CGPaintOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AFBD4268CC58700CBB497 /* CGPaintOutput.m */; };
 		964AFC14268CC58800CBB497 /* CGPaintContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AFBD7268CC58700CBB497 /* CGPaintContext.m */; };
 		964AFC1D268CC58800CBB497 /* CGPaintViewOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AFBE7268CC58700CBB497 /* CGPaintViewOutput.m */; };
 		964AFC20268CC58800CBB497 /* CGPaintUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AFBF0268CC58700CBB497 /* CGPaintUtils.m */; };
 		964AFC33268E0F5D00CBB497 /* rgba8_1125x1125.rgba in Resources */ = {isa = PBXBuildFile; fileRef = 964AFC32268E0F5D00CBB497 /* rgba8_1125x1125.rgba */; };
 		E5064F322697F85A0091C98C /* CGDrawEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5064F312697F85A0091C98C /* CGDrawEngine.cpp */; };
+		E5064F392698199A0091C98C /* CGPaintFramebuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5064F372698199A0091C98C /* CGPaintFramebuffer.m */; };
+		E5064F3C269819B20091C98C /* CGPaintFramebufferCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E5064F3B269819B20091C98C /* CGPaintFramebufferCache.m */; };
 		E550F2E126731C6E001D825B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E550F2E026731C6E001D825B /* AppDelegate.m */; };
 		E550F2E726731C6E001D825B /* CGDrawController.m in Sources */ = {isa = PBXBuildFile; fileRef = E550F2E626731C6E001D825B /* CGDrawController.m */; };
 		E550F2EC26731C6F001D825B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E550F2EB26731C6F001D825B /* Assets.xcassets */; };
@@ -47,14 +47,10 @@
 		964AFBC8268CC58700CBB497 /* CGPaintPipelineOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintPipelineOutput.m; sourceTree = "<group>"; };
 		964AFBC9268CC58700CBB497 /* CGPaintRenderPipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintRenderPipeline.m; sourceTree = "<group>"; };
 		964AFBCA268CC58700CBB497 /* CGPaintPipelineOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintPipelineOutput.h; sourceTree = "<group>"; };
-		964AFBCC268CC58700CBB497 /* CGPaintFramebuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintFramebuffer.m; sourceTree = "<group>"; };
-		964AFBCD268CC58700CBB497 /* CGPaintFramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFramebufferCache.h; sourceTree = "<group>"; };
 		964AFBCE268CC58700CBB497 /* CGPaintContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintContext.h; sourceTree = "<group>"; };
 		964AFBCF268CC58700CBB497 /* CGPaintFilterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFilterInput.h; sourceTree = "<group>"; };
 		964AFBD0268CC58700CBB497 /* CGPaintProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintProgram.m; sourceTree = "<group>"; };
 		964AFBD1268CC58700CBB497 /* CGPaintOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintOutput.h; sourceTree = "<group>"; };
-		964AFBD2268CC58700CBB497 /* CGPaintFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFramebuffer.h; sourceTree = "<group>"; };
-		964AFBD3268CC58700CBB497 /* CGPaintFramebufferCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintFramebufferCache.m; sourceTree = "<group>"; };
 		964AFBD4268CC58700CBB497 /* CGPaintOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintOutput.m; sourceTree = "<group>"; };
 		964AFBD5268CC58700CBB497 /* CGPaintProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintProgram.h; sourceTree = "<group>"; };
 		964AFBD7268CC58700CBB497 /* CGPaintContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintContext.m; sourceTree = "<group>"; };
@@ -68,6 +64,10 @@
 		E5064F302697F8190091C98C /* CGDrawBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawBridge.h; sourceTree = "<group>"; };
 		E5064F312697F85A0091C98C /* CGDrawEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawEngine.cpp; sourceTree = "<group>"; };
 		E5064F36269818CB0091C98C /* CGPaintInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintInput.h; sourceTree = "<group>"; };
+		E5064F372698199A0091C98C /* CGPaintFramebuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintFramebuffer.m; sourceTree = "<group>"; };
+		E5064F382698199A0091C98C /* CGPaintFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFramebuffer.h; sourceTree = "<group>"; };
+		E5064F3A269819B20091C98C /* CGPaintFramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFramebufferCache.h; sourceTree = "<group>"; };
+		E5064F3B269819B20091C98C /* CGPaintFramebufferCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintFramebufferCache.m; sourceTree = "<group>"; };
 		E550F2DC26731C6E001D825B /* CGDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E550F2DF26731C6E001D825B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E550F2E026731C6E001D825B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -157,10 +157,10 @@
 				964AFBCF268CC58700CBB497 /* CGPaintFilterInput.h */,
 				964AFBD5268CC58700CBB497 /* CGPaintProgram.h */,
 				964AFBD0268CC58700CBB497 /* CGPaintProgram.m */,
-				964AFBD2268CC58700CBB497 /* CGPaintFramebuffer.h */,
-				964AFBCC268CC58700CBB497 /* CGPaintFramebuffer.m */,
-				964AFBCD268CC58700CBB497 /* CGPaintFramebufferCache.h */,
-				964AFBD3268CC58700CBB497 /* CGPaintFramebufferCache.m */,
+				E5064F382698199A0091C98C /* CGPaintFramebuffer.h */,
+				E5064F372698199A0091C98C /* CGPaintFramebuffer.m */,
+				E5064F3A269819B20091C98C /* CGPaintFramebufferCache.h */,
+				E5064F3B269819B20091C98C /* CGPaintFramebufferCache.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -372,17 +372,17 @@
 				E550F30D26731F02001D825B /* CGDrawAgent.mm in Sources */,
 				964AFC11268CC58800CBB497 /* CGPaintProgram.m in Sources */,
 				964AFC13268CC58800CBB497 /* CGPaintOutput.m in Sources */,
-				964AFC10268CC58800CBB497 /* CGPaintFramebuffer.m in Sources */,
+				E5064F392698199A0091C98C /* CGPaintFramebuffer.m in Sources */,
 				96493E4E26824EE400721661 /* CGShaderUtil.cpp in Sources */,
 				964AFC14268CC58800CBB497 /* CGPaintContext.m in Sources */,
 				E550F31926732027001D825B /* CGDrawTextureOutput.cpp in Sources */,
 				96493E5A2683936300721661 /* CGDrawTexture.cpp in Sources */,
 				E550F2E726731C6E001D825B /* CGDrawController.m in Sources */,
+				E5064F3C269819B20091C98C /* CGPaintFramebufferCache.m in Sources */,
 				E550F327267320B2001D825B /* CGDrawProgram.cpp in Sources */,
 				E5064F322697F85A0091C98C /* CGDrawEngine.cpp in Sources */,
 				E550F2E126731C6E001D825B /* AppDelegate.m in Sources */,
 				E550F32126732085001D825B /* CGDrawFramebuffer.cpp in Sources */,
-				964AFC12268CC58800CBB497 /* CGPaintFramebufferCache.m in Sources */,
 				964AFC0F268CC58800CBB497 /* CGPaintRenderPipeline.m in Sources */,
 				E550F2F226731C6F001D825B /* main.m in Sources */,
 				964AFC20268CC58800CBB497 /* CGPaintUtils.m in Sources */,

@@ -38,9 +38,9 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     runSyncOnSerialQueue(^{
         [[CGPaintContext sharedRenderContext] useAsCurrentContext];
-        _agent = [[CGDrawAgent alloc] init];
-        _agent.delegate = self;
-        [_agent setInputData:(UInt8 *)rgba.bytes size:CGSizeMake(1125, 1125)];
+        self->_agent = [[CGDrawAgent alloc] init];
+        self->_agent.delegate = self;
+        [self->_agent setInputData:(UInt8 *)self->rgba.bytes size:CGSizeMake(1125, 1125)];
     });
 }
 @end
