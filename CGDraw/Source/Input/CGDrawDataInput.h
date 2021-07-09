@@ -16,7 +16,6 @@ class CGDrawDataInput:public CGDrawOutput {
 public:
     void setInputData(const unsigned char *data, int width, int height) {
         CGVec2f _size = CGVec2f(width, height);
-        CGDrawFramebuffer framebuffer;
         framebuffer.genWithSize(_size, true);
         framebuffer.bindTexture();
         framebuffer.upload(data, _size, GL_RGBA, GL_RGBA, false);
@@ -30,6 +29,8 @@ public:
             target->newFramebufferAvailable(mOutputFramebuffer);
         }
     }
+private:
+    CGDrawFramebuffer framebuffer;
 };
 
 }

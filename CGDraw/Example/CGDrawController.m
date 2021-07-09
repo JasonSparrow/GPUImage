@@ -10,7 +10,9 @@
 #import "CGDrawAgent.h"
 
 @interface CGDrawController ()<CGDrawDelegate>
-
+{
+    NSData *rgba;
+}
 @property(nonatomic, strong)CGPaintViewOutput *glView;
 @property(nonatomic, strong)CGDrawAgent *agent;
 @end
@@ -19,15 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _glView = [[CGPaintViewOutput alloc] initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)];
+    _glView = [[CGPaintViewOutput alloc] initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.width)];
+    _glView.center = self.view.center;
     [self.view addSubview:_glView];
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"rgba8_1125x1125" ofType:@"rgba"];
-    NSData *rgba = [NSData dataWithContentsOfFile:path];
-    
-    _agent = [[CGDrawAgent alloc] init];
-    _agent.delegate = self;
-    [_agent setInputData:(UInt8 *)rgba.bytes size:CGSizeMake(1125, 1125)];
+    rgba = [NSData dataWithContentsOfFile:path];
     
 }
 
@@ -36,4 +35,12 @@
     [_glView newTextureAvailable:framebuffer];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    runSyncOnSerialQueue(^{
+        [[CGPaintContext sharedRenderContext] useAsCurrentContext];
+        _agent = [[CGDrawAgent alloc] init];
+        _agent.delegate = self;
+        [_agent setInputData:(UInt8 *)rgba.bytes size:CGSizeMake(1125, 1125)];
+    });
+}
 @end

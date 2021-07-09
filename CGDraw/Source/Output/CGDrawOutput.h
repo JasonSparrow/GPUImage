@@ -17,14 +17,24 @@ namespace CGDraw {
 class CGDrawOutput {
             
 public:
-    virtual void addTarget(CGDrawInput *newtarget);
-    virtual void removeTarget(CGDrawInput *targetToRemove);
-    virtual void removeAllTargets();
-    virtual std::list<CGDrawInput *>targets();
-    virtual void requestRender();
+    virtual void addTarget(CGDrawInput *newtarget) {
+        mTargetList.push_back(newtarget);
+    };
+    virtual void removeTarget(CGDrawInput *targetToRemove) {
+        mTargetList.remove(targetToRemove);
+    };
+    virtual void removeAllTargets() {
+        mTargetList.clear();
+    };
+    virtual std::list<CGDrawInput *>targets() {
+        return mTargetList;
+    };
+    virtual void requestRender() {
+        
+    };
     
 protected:
-    CGDrawFramebuffer *mOutputFramebuffer;
+    CGDrawFramebuffer *mOutputFramebuffer{nullptr};
     std::list<CGDrawInput *>mTargetList;
 };
 

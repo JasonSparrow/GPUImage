@@ -26,6 +26,7 @@
 		964AFC29268CC58800CBB497 /* CGPaintFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AFBFC268CC58700CBB497 /* CGPaintFilter.m */; };
 		964AFC2A268CC58800CBB497 /* CGPaintGrayFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AFBFD268CC58700CBB497 /* CGPaintGrayFilter.m */; };
 		964AFC33268E0F5D00CBB497 /* rgba8_1125x1125.rgba in Resources */ = {isa = PBXBuildFile; fileRef = 964AFC32268E0F5D00CBB497 /* rgba8_1125x1125.rgba */; };
+		E5064F322697F85A0091C98C /* CGDrawEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5064F312697F85A0091C98C /* CGDrawEngine.cpp */; };
 		E550F2E126731C6E001D825B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E550F2E026731C6E001D825B /* AppDelegate.m */; };
 		E550F2E726731C6E001D825B /* CGDrawController.m in Sources */ = {isa = PBXBuildFile; fileRef = E550F2E626731C6E001D825B /* CGDrawController.m */; };
 		E550F2EC26731C6F001D825B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E550F2EB26731C6F001D825B /* Assets.xcassets */; };
@@ -33,8 +34,6 @@
 		E550F2F226731C6F001D825B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E550F2F126731C6F001D825B /* main.m */; };
 		E550F30726731E5D001D825B /* CGDrawOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E550F30526731E5D001D825B /* CGDrawOutput.cpp */; };
 		E550F30D26731F02001D825B /* CGDrawAgent.mm in Sources */ = {isa = PBXBuildFile; fileRef = E550F30C26731F02001D825B /* CGDrawAgent.mm */; };
-		E550F31026731FFD001D825B /* CGDrawDataInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E550F30E26731FFD001D825B /* CGDrawDataInput.cpp */; };
-		E550F3132673200D001D825B /* CGDrawTextureInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E550F3112673200D001D825B /* CGDrawTextureInput.cpp */; };
 		E550F31926732027001D825B /* CGDrawTextureOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E550F31726732027001D825B /* CGDrawTextureOutput.cpp */; };
 		E550F31E26732074001D825B /* CGDrawFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E550F31C26732074001D825B /* CGDrawFilter.cpp */; };
 		E550F32126732085001D825B /* CGDrawFramebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E550F31F26732085001D825B /* CGDrawFramebuffer.cpp */; };
@@ -83,6 +82,9 @@
 		964AFC0C268CC58700CBB497 /* CGPaintUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintUtils.h; sourceTree = "<group>"; };
 		964AFC0D268CC58700CBB497 /* CGPaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaint.h; sourceTree = "<group>"; };
 		964AFC32268E0F5D00CBB497 /* rgba8_1125x1125.rgba */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rgba8_1125x1125.rgba; sourceTree = "<group>"; };
+		E5064F2F2697F7E00091C98C /* CGDrawEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawEngine.h; sourceTree = "<group>"; };
+		E5064F302697F8190091C98C /* CGDrawBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawBridge.h; sourceTree = "<group>"; };
+		E5064F312697F85A0091C98C /* CGDrawEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawEngine.cpp; sourceTree = "<group>"; };
 		E550F2DC26731C6E001D825B /* CGDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E550F2DF26731C6E001D825B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E550F2E026731C6E001D825B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,9 +99,7 @@
 		E550F30626731E5D001D825B /* CGDrawOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawOutput.h; sourceTree = "<group>"; };
 		E550F30B26731F02001D825B /* CGDrawAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawAgent.h; sourceTree = "<group>"; };
 		E550F30C26731F02001D825B /* CGDrawAgent.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CGDrawAgent.mm; sourceTree = "<group>"; };
-		E550F30E26731FFD001D825B /* CGDrawDataInput.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawDataInput.cpp; sourceTree = "<group>"; };
 		E550F30F26731FFD001D825B /* CGDrawDataInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawDataInput.h; sourceTree = "<group>"; };
-		E550F3112673200D001D825B /* CGDrawTextureInput.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawTextureInput.cpp; sourceTree = "<group>"; };
 		E550F3122673200D001D825B /* CGDrawTextureInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureInput.h; sourceTree = "<group>"; };
 		E550F31726732027001D825B /* CGDrawTextureOutput.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawTextureOutput.cpp; sourceTree = "<group>"; };
 		E550F31826732027001D825B /* CGDrawTextureOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureOutput.h; sourceTree = "<group>"; };
@@ -218,6 +218,16 @@
 			path = Filter;
 			sourceTree = "<group>";
 		};
+		E5064F2E2697F7B50091C98C /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E5064F302697F8190091C98C /* CGDrawBridge.h */,
+				E5064F2F2697F7E00091C98C /* CGDrawEngine.h */,
+				E5064F312697F85A0091C98C /* CGDrawEngine.cpp */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
 		E550F2D326731C6E001D825B = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +262,7 @@
 		E550F2FA26731D0C001D825B /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E5064F2E2697F7B50091C98C /* Interface */,
 				964AFBC4268CC58700CBB497 /* GLView */,
 				96493E3E26824EE300721661 /* GLUtils */,
 				E550F31B26732063001D825B /* Filter */,
@@ -289,9 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				E550F30326731E54001D825B /* CGDrawInput.h */,
-				E550F30E26731FFD001D825B /* CGDrawDataInput.cpp */,
 				E550F30F26731FFD001D825B /* CGDrawDataInput.h */,
-				E550F3112673200D001D825B /* CGDrawTextureInput.cpp */,
 				E550F3122673200D001D825B /* CGDrawTextureInput.h */,
 			);
 			path = Input;
@@ -394,7 +403,6 @@
 			files = (
 				964AFC1D268CC58800CBB497 /* CGPaintViewOutput.m in Sources */,
 				964AFC18268CC58800CBB497 /* CGPaintRawDataInput.m in Sources */,
-				E550F3132673200D001D825B /* CGDrawTextureInput.cpp in Sources */,
 				E550F32426732096001D825B /* CGDrawFramebufferCache.cpp in Sources */,
 				E550F31E26732074001D825B /* CGDrawFilter.cpp in Sources */,
 				96493E5726837E7500721661 /* CGVec.cpp in Sources */,
@@ -412,12 +420,12 @@
 				E550F2E726731C6E001D825B /* CGDrawController.m in Sources */,
 				964AFC16268CC58800CBB497 /* CGPaintTextureInput.m in Sources */,
 				E550F327267320B2001D825B /* CGDrawProgram.cpp in Sources */,
+				E5064F322697F85A0091C98C /* CGDrawEngine.cpp in Sources */,
 				964AFC2A268CC58800CBB497 /* CGPaintGrayFilter.m in Sources */,
 				E550F2E126731C6E001D825B /* AppDelegate.m in Sources */,
 				E550F32126732085001D825B /* CGDrawFramebuffer.cpp in Sources */,
 				964AFC12268CC58800CBB497 /* CGPaintFramebufferCache.m in Sources */,
 				964AFC0F268CC58800CBB497 /* CGPaintRenderPipeline.m in Sources */,
-				E550F31026731FFD001D825B /* CGDrawDataInput.cpp in Sources */,
 				E550F2F226731C6F001D825B /* main.m in Sources */,
 				964AFC20268CC58800CBB497 /* CGPaintUtils.m in Sources */,
 				964AFC0E268CC58700CBB497 /* CGPaintPipelineOutput.m in Sources */,
@@ -556,13 +564,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AA56KJRHUV;
 				INFOPLIST_FILE = "$(SRCROOT)/CGDraw/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ufotosoft.av.CGPaintC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.codec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -574,13 +583,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AA56KJRHUV;
 				INFOPLIST_FILE = "$(SRCROOT)/CGDraw/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ufotosoft.av.CGPaintC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.codec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

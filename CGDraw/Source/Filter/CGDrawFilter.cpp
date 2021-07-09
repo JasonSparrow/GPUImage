@@ -29,7 +29,10 @@ static const GLfloat textureCoordinates[] = {
 };
 
 CGDrawFilter::CGDrawFilter() {
-
+//    const std::string &_progName = kCGDrawVertexShaderString;
+    unsigned char *vShader = (unsigned char *)kCGDrawVertexShaderString;
+    unsigned char *fShader = (unsigned char *)kCGDrawFragmentShaderString;
+    CGDrawFilter::setInputVertexShader(vShader, fShader);
 }
 
 CGDrawFilter::~CGDrawFilter() {
@@ -89,7 +92,7 @@ void CGDrawFilter::renderToTextureWithVertices(const GLfloat *vertices, const GL
     glDisableVertexAttribArray(mTexCoord);
     
     mOutputFramebuffer->unbindTexture();
-    mOutputFramebuffer->unbindTexture();
+    mOutputFramebuffer->unbindFramebuffer();
     mShaderProgram->unuse();
     
     if (mInputFramebuffer->getOnlyGenTexture() == false) {
