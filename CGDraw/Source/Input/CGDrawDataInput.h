@@ -24,7 +24,7 @@ public:
     }
     void requestRender() override {
         std::list<CGDrawInput *>::iterator iter;
-        for(iter = mTargetList.begin(); iter != mTargetList.end() ;iter++) {
+        for(iter = mTargetList.begin(); iter != mTargetList.end(); iter++) {
             CGDrawInput *target = *iter;
             target->newFramebufferAvailable(mOutputFramebuffer);
         }

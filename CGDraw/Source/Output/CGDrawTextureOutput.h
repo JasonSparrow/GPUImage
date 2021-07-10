@@ -40,7 +40,7 @@ public:
         mFramebuffer = inFramebuffer;
     };
 private:
-    CGDrawFramebuffer *mFramebuffer;
+    CGDrawFramebuffer *mFramebuffer{nullptr};
 };
 
 }
