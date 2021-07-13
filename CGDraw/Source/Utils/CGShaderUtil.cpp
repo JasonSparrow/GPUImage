@@ -7,7 +7,6 @@
 #include <cstring>
 #include "CGShaderUtil.h"
 #include "CGDrawLog.h"
-#include "CGOpenGL.h"
 #include <iostream>
 
 int CG_LOG_LEVEL = 4;

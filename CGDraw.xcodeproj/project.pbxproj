@@ -105,7 +105,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		96493E3E26824EE300721661 /* GLUtils */ = {
+		96493E3E26824EE300721661 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				96493E4226824EE300721661 /* CGShaderUtil.cpp */,
@@ -115,7 +115,7 @@
 				96493E5526837E7500721661 /* CGVec.cpp */,
 				96493E5626837E7500721661 /* CGVec.h */,
 			);
-			path = GLUtils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		964AFBC4268CC58700CBB497 /* iOSGLView */ = {
@@ -224,7 +224,7 @@
 			children = (
 				E5064F2E2697F7B50091C98C /* Interface */,
 				964AFBC4268CC58700CBB497 /* iOSGLView */,
-				96493E3E26824EE300721661 /* GLUtils */,
+				96493E3E26824EE300721661 /* Utils */,
 				E550F31B26732063001D825B /* Filter */,
 				E550F31A2673204C001D825B /* Core */,
 				E550F2FE26731DB5001D825B /* Input */,

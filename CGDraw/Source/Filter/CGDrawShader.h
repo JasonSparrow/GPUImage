@@ -8,7 +8,7 @@
 #ifndef CGDrawShader_h
 #define CGDrawShader_h
 
-#include "CGOpenGL.h"
+#include "../Utils/CGOpenGL.h"
 
 const char * kCGDrawVertexShaderString = CG_SHADER_SRC
 (
