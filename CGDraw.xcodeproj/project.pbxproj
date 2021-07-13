@@ -118,7 +118,7 @@
 			path = GLUtils;
 			sourceTree = "<group>";
 		};
-		964AFBC4268CC58700CBB497 /* GLView */ = {
+		964AFBC4268CC58700CBB497 /* iOSGLView */ = {
 			isa = PBXGroup;
 			children = (
 				E5064F35269818BF0091C98C /* Input */,
@@ -129,7 +129,7 @@
 				964AFBF0268CC58700CBB497 /* CGPaintUtils.m */,
 				964AFC0D268CC58700CBB497 /* CGPaint.h */,
 			);
-			path = GLView;
+			path = iOSGLView;
 			sourceTree = "<group>";
 		};
 		964AFBC5268CC58700CBB497 /* Pipeline */ = {
@@ -223,7 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				E5064F2E2697F7B50091C98C /* Interface */,
-				964AFBC4268CC58700CBB497 /* GLView */,
+				964AFBC4268CC58700CBB497 /* iOSGLView */,
 				96493E3E26824EE300721661 /* GLUtils */,
 				E550F31B26732063001D825B /* Filter */,
 				E550F31A2673204C001D825B /* Core */,
